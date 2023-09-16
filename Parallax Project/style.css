@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-40px);
+    scale: 5.5;
+    
+}
+.foreground{
+    transform: translateZ(-20px);
+    scale: 3.2;
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+h1{
+    color: white;
+    font-size: 10rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -20rem;
+    text-shadow: 5px 5px 10px grey;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font-size: 5rem;
+    position: relative;
+    top: 2rem;
+    left: 5rem;
+}
+p{
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin: 5rem;
+}
+.para{
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img-1{
+    background-image: url(cs.jpg);
+}
+.img-2{
+    background-image: url(biking-slide.jpg);
+}
+.img-3{
+    background-image: url(resturentr.jpg);
+}
+
+.headings{
+    position: absolute;
+    color: black;
+    background-color: white;
+    display: inline;
+    font-size: larger;
+    padding: 1rem 2.5rem;
+    top: 42%;
+    left: 40%;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
